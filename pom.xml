@@ -25,13 +25,17 @@
 </dependency>
 
 
-<dependency>
+  <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency>
-    
+  </dependency>
+  <dependency>
+<groupId>jakarta.xml.bind</groupId>
+<artifactId>jakarta.xml.bind-api</artifactId>
+<version>2.3.2</version>
+</dependency>  
     
   </dependencies>
   
