@@ -18,10 +18,24 @@
 
   <dependencies>
     
-     <dependency>
+<dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
-    <version>3.0.2</version>
+    <version>4.5.1</version>
+    <scope>test</scope>
+    <exclusions>
+        <exclusion>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+<!-- Versión explícita compatible con RestAssured 4.x -->
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.13</version>
+    <scope>test</scope>
 </dependency>
 
 
